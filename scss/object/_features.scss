@@ -1,13 +1,14 @@
 .features {
-    padding-top: 80px;
+    padding: 80px;
     .features-cont {
         padding-top: 60px;
     }
 
-    .features-item {
+    .features-item-1 {
         color: cl(white);
         display: flex;
         flex-flow: column-reverse;
+        padding: 10px 0;
         @include overTab {
         }
         + .features-item {
@@ -50,6 +51,81 @@
             padding-right: 30px;
             padding-left: 30px;
             padding-top: 40px;
+            padding-bottom: 10px;
+            @include overTab {
+                flex: 1;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .title {
+            color: cl(baige);
+            font-size: 18px;
+            @include overTab {
+                font-size: 28px;
+            }
+        }
+        .sentence {
+            margin-top: 50px;
+            font-size: 16px;
+            @include overTab {
+                font-size: 18px;
+            }
+        }
+        .image {
+            @include overTab {
+                width: percentage(640 / 1280);
+            }
+        }
+    }
+    .features-item-2 {
+        color: cl(white);
+        display: flex;
+        flex-flow: column-reverse;
+        padding: 10px 0;
+        @include overTab {
+        }
+        + .features-item {
+            padding-top: 60px;
+            @include overTab {
+                padding-top: 0;
+            }
+        }
+        &:nth-child(odd) {
+            @include overTab {
+                flex-flow: wrap-reverse;
+            }
+            .image {
+                @include overTab {
+                    margin-right: 40px;
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-right: 40px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            @include overTab {
+                flex-flow: row;
+            }
+            .image {
+                @include overTab {
+                    margin-left: 40px;
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-left: 40px;
+                }
+            }
+        }
+        .text {
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 40px;
+            padding-bottom: 10px;
             @include overTab {
                 flex: 1;
                 padding-left: 0;

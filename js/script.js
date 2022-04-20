@@ -1,7 +1,7 @@
 // Recommend / slick.js
 // ==================================================
 $(function() {
-    $('#rec-slick').slick({
+    $('#rec-slick').not('.slick-initialized').slick({
         infinite: true,
         slidesToshow: 3,
         slidesToScroll: 3,

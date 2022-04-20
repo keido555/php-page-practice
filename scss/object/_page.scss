@@ -1,0 +1,95 @@
+.page {
+    background-image: url(../image/yuuhi.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 674px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        background-image: url(../image/top-mv_sp.png);
+    }
+}
+.page_title {
+    color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            font-size: 36px;
+        }
+}
+.page-under {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.yoyaku {
+    background-color: black;
+    padding: 50px;
+}
+.yoyaku-wrap {
+    margin: 30px auto;
+    color: white;
+}
+.yoyaku-item {
+    text-align: center;
+    margin-top: 30px;
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+.wp-block-gallery {
+    justify-content: center;
+}
+.btn1,
+a.btn1 {
+    color: #fff;
+    background-color: #30613D;
+    width: 300px;
+    height: 50px;
+}
+.btn1,
+a.btn1:hover {
+    color: #fff;
+    background: #30613D;
+}
+.ct-btn {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-wrap {
+    color: white;
+    margin-top: 50px;
+}
+
+.ct-place {
+    margin: 20px auto;
+    text-align: center;
+}
+.ct-name {
+    p{
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+.submit {
+    margin-top: 30px;
+}
+.archive {
+    background-color: black;
+}
+.single {
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+}
